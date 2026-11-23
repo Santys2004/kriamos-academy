@@ -1,0 +1,27 @@
+{
+  "name": "Academia KRIAMOS",
+  "short_name": "KRIAMOS",
+  "description": "Sistema interno de capacitación, certificación y estudio sin conexión de KRIAMOS S.A.S.",
+  "start_url": "index.php?page=home",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#12365A",
+  "lang": "es-CO",
+  "categories": ["education", "business", "productivity"],
+  "icons": [
+    {
+      "src": "assets/img/logo-kriamos.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/logo-kriamos.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

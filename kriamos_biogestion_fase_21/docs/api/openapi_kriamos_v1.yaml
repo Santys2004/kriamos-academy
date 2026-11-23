@@ -1,0 +1,81 @@
+openapi: 3.0.3
+info:
+  title: Kriamos BioGestión ICA API
+  version: "1.0"
+  description: API segura para consulta de información documental, operativa y BI.
+servers:
+  - url: https://biogestion.kriamos.com.co
+security:
+  - bearerAuth: []
+paths:
+  /api/v1/health:
+    get:
+      summary: Estado de salud API
+      responses:
+        "200":
+          description: API disponible
+  /api/v1/granjas:
+    get:
+      summary: Lista de granjas activas
+      responses:
+        "200":
+          description: Granjas
+  /api/v1/galpones:
+    get:
+      summary: Lista de galpones
+      responses:
+        "200":
+          description: Galpones
+  /api/v1/formatos:
+    get:
+      summary: Lista de formatos diligenciados
+      responses:
+        "200":
+          description: Formatos
+  /api/v1/alertas:
+    get:
+      summary: Lista de alertas
+      responses:
+        "200":
+          description: Alertas
+  /api/v1/documentos:
+    get:
+      summary: Lista de documentos
+      parameters:
+        - name: q
+          in: query
+          schema:
+            type: string
+        - name: estado
+          in: query
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Documentos
+  /api/v1/bi:
+    get:
+      summary: Indicadores BI
+      parameters:
+        - name: fecha_inicio
+          in: query
+          schema:
+            type: string
+            format: date
+        - name: fecha_fin
+          in: query
+          schema:
+            type: string
+            format: date
+        - name: granja_id
+          in: query
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Indicadores BI
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer

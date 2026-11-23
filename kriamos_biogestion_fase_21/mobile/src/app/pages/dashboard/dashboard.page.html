@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-card class="kriamos-card">
+          <ion-card-header>
+            <ion-card-title class="kriamos-title">Kriamos BioGestión ICA</ion-card-title>
+            <ion-card-subtitle>App móvil operativa</ion-card-subtitle>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Acceda a formatos, documentos, alertas, sincronización e IA documental desde el dispositivo móvil.</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6"><ion-button expand="block" routerLink="/formatos">Formatos</ion-button></ion-col>
+      <ion-col size="6"><ion-button expand="block" routerLink="/alertas">Alertas</ion-button></ion-col>
+      <ion-col size="6"><ion-button expand="block" routerLink="/documentos">Documentos</ion-button></ion-col>
+      <ion-col size="6"><ion-button expand="block" routerLink="/sincronizacion">Sync</ion-button></ion-col>
+      <ion-col size="12"><ion-button expand="block" color="secondary" routerLink="/ia">IA Documental</ion-button></ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

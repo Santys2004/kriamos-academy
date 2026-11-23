@@ -1,0 +1,307 @@
+:root {
+    --kriamos-blue: #153D68;
+    --kriamos-blue-dark: #0D2A49;
+    --kriamos-orange: #F58220;
+    --kriamos-orange-dark: #D96E13;
+    --kriamos-light: #F6F8FA;
+    --kriamos-gray: #6C757D;
+}
+
+body {
+    background: var(--kriamos-light);
+    color: #1f2933;
+}
+
+.brand-logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.text-kriamos-blue { color: var(--kriamos-blue) !important; }
+.bg-kriamos-blue { background-color: var(--kriamos-blue) !important; }
+.bg-kriamos-orange { background-color: var(--kriamos-orange) !important; }
+
+.btn-kriamos-orange {
+    background: var(--kriamos-orange);
+    border-color: var(--kriamos-orange);
+    color: #fff;
+    font-weight: 700;
+}
+
+.btn-kriamos-orange:hover,
+.btn-kriamos-orange:focus {
+    background: var(--kriamos-orange-dark);
+    border-color: var(--kriamos-orange-dark);
+    color: #fff;
+}
+
+.hero-kriamos {
+    background: url('../img/hero-galpon.jpg') center center / cover no-repeat;
+}
+
+.hero-overlay {
+    min-height: 480px;
+    background: linear-gradient(90deg, rgba(13,42,73,0.92), rgba(21,61,104,0.68), rgba(21,61,104,0.15));
+}
+
+.min-vh-50 { min-height: 480px; }
+
+.card-kriamos {
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(13,42,73,0.08);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card-kriamos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 32px rgba(13,42,73,0.12);
+}
+
+.icon-box {
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+    border-radius: 16px;
+    background: rgba(245,130,32,.12);
+    color: var(--kriamos-orange);
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.footer-kriamos {
+    background: var(--kriamos-blue-dark);
+    color: #fff;
+}
+
+.success-circle {
+    width: 72px;
+    height: 72px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #198754;
+    color: #fff;
+    font-size: 32px;
+}
+
+.avatar-photo {
+    width: 46px;
+    height: 46px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+
+.avatar-empty {
+    width: 46px;
+    height: 46px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #e9ecef;
+    color: #6c757d;
+}
+
+.form-control,
+.form-select,
+.btn {
+    border-radius: 12px;
+}
+
+.card {
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+@media (max-width: 767px) {
+    .hero-overlay, .min-vh-50 { min-height: 420px; }
+    .display-5 { font-size: 2rem; }
+}
+
+.course-hero {
+    background:
+        linear-gradient(90deg, rgba(13,42,73,.96), rgba(21,61,104,.82), rgba(245,130,32,.55)),
+        url('../img/hero-galpon.jpg') center center / cover no-repeat;
+}
+
+.material-icon {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: rgba(21,61,104,.08);
+    color: var(--kriamos-blue);
+    font-size: 20px;
+}
+
+.w-lg-auto {
+    width: auto !important;
+}
+
+@media (max-width: 991px) {
+    .w-lg-auto {
+        width: 100% !important;
+    }
+}
+
+/* Fase 3 - Evaluaciones */
+.top-90 { top: 90px; }
+.exam-header {
+    background: linear-gradient(135deg, var(--kriamos-blue), #0b243d);
+}
+.timer-box {
+    min-width: 86px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    padding: .45rem .85rem;
+    background: rgba(255,255,255,.14);
+    border: 1px solid rgba(255,255,255,.32);
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.timer-danger {
+    background: #dc3545 !important;
+    color: #fff !important;
+    animation: pulseTimer 1s infinite;
+}
+.answer-option {
+    cursor: pointer;
+    transition: all .18s ease-in-out;
+    background: #fff;
+}
+.answer-option:hover {
+    border-color: var(--kriamos-orange) !important;
+    box-shadow: 0 .35rem 1rem rgba(18, 54, 90, .08);
+}
+.answer-option:has(input:checked) {
+    border-color: var(--kriamos-orange) !important;
+    background: rgba(242, 140, 0, .08);
+}
+@keyframes pulseTimer {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.04); }
+}
+
+/* Fase 6 - Dashboard gerencial */
+.dashboard-hero {
+    background:
+        linear-gradient(135deg, rgba(13,42,73,.98), rgba(21,61,104,.88), rgba(245,130,32,.55)),
+        url('../img/hero-galpon.jpg') center center / cover no-repeat;
+}
+.dashboard-icon {
+    width: 64px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    color: #fff;
+    background: rgba(255,255,255,.16);
+    border: 1px solid rgba(255,255,255,.24);
+    font-size: 28px;
+}
+.metric-card {
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(13,42,73,0.08);
+}
+.kriamos-progress {
+    height: 24px;
+    border-radius: 999px;
+    background: #e9eef4;
+    overflow: hidden;
+}
+.kriamos-progress .progress-bar {
+    font-size: .78rem;
+    font-weight: 800;
+}
+
+/* Fase 9 - PWA y modo sin conexión */
+.connection-status {
+    position: sticky;
+    top: 0;
+    z-index: 1080;
+    text-align: center;
+    padding: .55rem 1rem;
+    font-weight: 700;
+    font-size: .92rem;
+}
+.connection-status.online {
+    background: #d1e7dd;
+    color: #0f5132;
+}
+.connection-status.offline {
+    background: #fff3cd;
+    color: #664d03;
+}
+.material-offline-card {
+    border-left: 5px solid var(--kriamos-orange);
+}
+.offline-material-status.text-success {
+    font-weight: 700;
+}
+@media (display-mode: standalone) {
+    .navbar {
+        border-bottom: 3px solid var(--kriamos-orange);
+    }
+}
+
+/* Fase 9 - Chat IA */
+.chat-ai-hero {
+    background:
+        linear-gradient(135deg, rgba(13,42,73,.98), rgba(21,61,104,.88), rgba(245,130,32,.50)),
+        url('../img/hero-galpon.jpg') center center / cover no-repeat;
+}
+.chat-panel {
+    min-height: 640px;
+}
+.chat-messages {
+    height: 520px;
+    overflow-y: auto;
+    background: linear-gradient(180deg, #f8fafc, #ffffff);
+}
+.chat-bubble {
+    max-width: 88%;
+    padding: 1rem 1.1rem;
+    margin-bottom: 1rem;
+    border-radius: 18px;
+    box-shadow: 0 8px 18px rgba(13,42,73,0.07);
+}
+.chat-user {
+    margin-left: auto;
+    background: var(--kriamos-blue);
+    color: #fff;
+    border-bottom-right-radius: 6px;
+}
+.chat-assistant {
+    margin-right: auto;
+    background: #fff;
+    border: 1px solid #e8eef5;
+    color: var(--kriamos-dark);
+    border-bottom-left-radius: 6px;
+}
+.chat-bubble-label {
+    font-size: .75rem;
+    font-weight: 800;
+    opacity: .75;
+    margin-bottom: .35rem;
+}
+.chat-bubble-text {
+    white-space: normal;
+    line-height: 1.45;
+}
+.chat-form textarea {
+    resize: none;
+}
+@media (max-width: 768px) {
+    .chat-messages { height: 430px; }
+    .chat-bubble { max-width: 96%; }
+}

@@ -1,0 +1,37 @@
+@import "@ionic/angular/css/core.css";
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+.kriamos-card {
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(13, 36, 70, 0.08);
+}
+
+.kriamos-title {
+  color: var(--ion-color-primary);
+  font-weight: 800;
+}
+
+.metric-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--ion-color-primary);
+}
+
+.offline-badge {
+  font-size: 12px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #f8d7da;
+  color: #842029;
+}
+
+.online-badge {
+  font-size: 12px;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #d1e7dd;
+  color: #0f5132;
+}

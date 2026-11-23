@@ -1,0 +1,6 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /kriamos_biogestion_fase_21/public/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]
